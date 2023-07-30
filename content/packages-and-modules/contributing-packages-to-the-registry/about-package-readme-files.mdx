@@ -1,37 +1,176 @@
----
-title: About package README files
----
+A Customizable Cibilmeter Implementation in React Native
 
-To help others find your packages on npm and have a good experience using your code in their projects, we recommend including a README file in your package directory. Your README file may include directions for installing, configuring, and using the code in your package, as well as any other information a user may find helpful. The README file will be shown on the package page.
+import RN_Speedo_Meter from ‘’react-native-cibil-meter;
 
-An npm package README file must be in the root-level directory of the package.
+function App(): JSX.Element {
+  return (
+    <View
+      style={{
+        width: '100%',
+        height: '100%',
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}>
+      <RN_Speedo_Meter
+        value={10}
+        size={200}
+        centerLabelText={true}
+        bottomLabelText={false}
+        centerTextStyle={{color: 'red'}}></RN_Speedo_Meter>
+    </View>
+  );
+}
 
-## Creating and adding a README.md file to a package
-
-1. In a text editor, in your package root directory, create a file called `README.md`.
-2. In the `README.md` file, add useful information about your package.
-3. Save the `README.md` file.
-
-<Note>
-
-**Note:** The file extension `.md` indicates a Markdown file. For more information about Markdown, see the GitHub Guide "<a href="https://guides.github.com/features/mastering-markdown/#what">Mastering Markdown</a>".
-
-</Note>
-
-## Updating an existing package README file
-
-The README file will only be updated on the package page when you publish a new version of your package. To update your README file:
-
-1. In a text editor, update the contents of the `README.md` file.
-
-2. Save the `README.md` file.
-
-3. On the command line, in the package root directory, run the following commands:
-
-   ```
-   npm version patch
-   npm publish
-   ```
+Installation
+Basic Usage
+Properties
+Questions
 
 
-[markdown-link]: https://guides.github.com/features/mastering-markdown/#what
+Installation
+npm i react-native-cibil-meter
+
+Basic Usage
+/**
+* Sample React Native App
+* https://github.com/facebook/react-native
+*
+* @format
+*/
+
+
+import React from 'react';
+import {StyleSheet, View} from 'react-native';
+
+
+import RN_Speedo_Meter from 'react-native-cibil-meter';
+
+
+function App(): JSX.Element {
+return (
+<View
+style={{
+width: '100%',
+height: '100%',
+justifyContent: 'center',
+alignItems: 'center',
+}}>
+<RN_Speedo_Meter
+value={10}
+size={200}
+centerLabelText={true}
+bottomLabelText={false}
+centerTextStyle={{color: 'red'}}></RN_Speedo_Meter>
+</View>
+);
+}
+
+
+export default App;
+
+
+
+
+
+Prop
+Default
+Type
+Description
+value
+required
+number
+Current Value
+size
+Default Labels
+number
+Size
+defaultValue
+50
+number
+Default Value
+minValue
+0
+number
+Minimum Limit
+maxValue
+100
+number
+Maximum Value
+allowedDecimals
+0
+number
+Allowed Decimal Places
+easeDuration
+500
+number
+Ease Duration for the Needle animation
+labels
+Default Labels
+array
+Labels List
+needleImage
+Default Needle Image
+string
+Absolute path to the Needle Image
+wrapperStyle
+{}
+object
+Wrapper Style
+outerCircleStyle
+{}
+object
+Outer Circle Style
+halfCircleStyle
+{}
+object
+Half Circle Style
+imageWrapperStyle
+{}
+object
+Needle Image Wrapper Style
+imageStyle
+{}
+object
+Needle Image Style
+innerCircleStyle
+{}
+object
+Inner Circle Style
+labelWrapperStyle
+{}
+object
+Label Wrapper Style
+labelStyle
+{}
+object
+Label Style
+labelNoteStyle
+{}
+object
+Label Note Style
+centerLabelText
+false
+boolean
+boolean
+bootomLabelText
+true
+boolean
+boolean
+linearColor
+[]
+array
+Linear List
+centerTextColor
+{}
+object
+Center text Style
+innerTextStyle
+{}
+object
+Innter Text Style
+
+
+
+Questions
+Feel free to Contact me
+
